@@ -8,6 +8,9 @@ jobs:
   badge:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
       - uses: emibcn/badge-action@v1
         with:
           label: "Test coverage"
