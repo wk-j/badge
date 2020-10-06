@@ -1,0 +1,16 @@
+name: Local
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  badge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: emibcn/badge-action@v1
+        with:
+          label: "Test coverage"
+          status: "53.4%"
+          color: "blue,555,daf"
+          path: ".github/badges/coverage.svg"
