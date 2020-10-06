@@ -2,6 +2,8 @@ name: Badge
 
 on:
   push:
+    tags:
+      - "*"
 
 jobs:
   badge:
