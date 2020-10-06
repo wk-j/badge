@@ -20,7 +20,7 @@ jobs:
           NAME: time
           LABEL: "Updated at"
           STATUS: ${{ steps.date.outputs.data }}
-          COLOR: 00EEFF
+          COLOR: 247BA0
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Version badge
@@ -29,5 +29,5 @@ jobs:
           NAME: version
           LABEL: "Version"
           STATUS: ${{ steps.get-version.outputs.VERSION }}
-          COLOR: 00EEFF
+          COLOR: 247BA0
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
